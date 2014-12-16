@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+    overflow: hidden;
+    margin: auto;
+	#preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #F6A400;
+		z-index: 99;
+		#status {
+			color: #fff;
+			font-size: 6em;
+			text-align: center;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			left: 50%;
+			top: 55%;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: -100px 0 0 -100px;
+		}
+	}
+}
