@@ -1,0 +1,210 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'n' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'n', null ]
+6 verbose cache add name=undefined spec="n" args=["n",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'n',
+7 verbose parsed url   path: 'n',
+7 verbose parsed url   href: 'n' }
+8 silly lockFile d1854cae-n n
+9 verbose lock n C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\d1854cae-n.lock
+10 silly lockFile d1854cae-n n
+11 silly lockFile d1854cae-n n
+12 verbose addNamed [ 'n', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 6b58d7dc-n n@
+15 verbose lock n@ C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\6b58d7dc-n.lock
+16 silly addNameRange { name: 'n', range: '*', hasData: false }
+17 verbose url raw n
+18 verbose url resolving [ 'https://registry.npmjs.org/', './n' ]
+19 verbose url resolved https://registry.npmjs.org/n
+20 info trying registry request attempt 1 at 11:09:03
+21 http GET https://registry.npmjs.org/n
+22 http 200 https://registry.npmjs.org/n
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Wed, 17 Dec 2014 13:09:15 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"DR0XAXQKYUZL5FV92N4JLNX37"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     'content-length': '36732',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     'x-served-by': 'cache-atl6229-ATL',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1418821755.364127,VS0,VE23',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'n', range: '*', hasData: true }
+25 silly addNameRange versions [ 'n',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.2.0',
+25 silly addNameRange     '0.2.1',
+25 silly addNameRange     '0.2.2',
+25 silly addNameRange     '0.3.0',
+25 silly addNameRange     '0.4.0',
+25 silly addNameRange     '0.4.1',
+25 silly addNameRange     '0.4.2',
+25 silly addNameRange     '0.5.0',
+25 silly addNameRange     '0.5.1',
+25 silly addNameRange     '0.5.2',
+25 silly addNameRange     '0.5.3',
+25 silly addNameRange     '0.5.4',
+25 silly addNameRange     '0.6.0',
+25 silly addNameRange     '0.6.1',
+25 silly addNameRange     '0.7.0',
+25 silly addNameRange     '0.7.1',
+25 silly addNameRange     '0.7.2',
+25 silly addNameRange     '0.7.3',
+25 silly addNameRange     '0.8.0',
+25 silly addNameRange     '0.8.1',
+25 silly addNameRange     '0.8.2',
+25 silly addNameRange     '0.9.0',
+25 silly addNameRange     '0.9.1',
+25 silly addNameRange     '0.9.2',
+25 silly addNameRange     '0.9.3',
+25 silly addNameRange     '1.0.0',
+25 silly addNameRange     '1.1.0',
+25 silly addNameRange     '1.2.1',
+25 silly addNameRange     '1.2.2',
+25 silly addNameRange     '1.2.3',
+25 silly addNameRange     '1.2.4',
+25 silly addNameRange     '1.2.5',
+25 silly addNameRange     '1.2.6',
+25 silly addNameRange     '1.2.7',
+25 silly addNameRange     '1.2.8',
+25 silly addNameRange     '1.2.9' ] ]
+26 verbose addNamed [ 'n', '1.2.9' ]
+27 verbose addNamed [ '1.2.9', '1.2.9' ]
+28 silly lockFile 7f22195c-n-1-2-9 n@1.2.9
+29 verbose lock n@1.2.9 C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\7f22195c-n-1-2-9.lock
+30 silly lockFile 473decd1-registry-npmjs-org-n-n-1-2-9-tgz https://registry.npmjs.org/n/-/n-1.2.9.tgz
+31 verbose lock https://registry.npmjs.org/n/-/n-1.2.9.tgz C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\473decd1-registry-npmjs-org-n-n-1-2-9-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/n/-/n-1.2.9.tgz',
+32 verbose addRemoteTarball   '962f4a31f218e0e03d4353e68311d4bbe38cf130' ]
+33 info retry fetch attempt 1 at 11:09:04
+34 verbose fetch to= C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz
+35 http GET https://registry.npmjs.org/n/-/n-1.2.9.tgz
+36 http 200 https://registry.npmjs.org/n/-/n-1.2.9.tgz
+37 verbose tar unpack C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz
+38 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+39 verbose lock tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\d2976602-4878-0-13412194652482867-package.lock
+40 silly lockFile 85cfe5fd-4878-0-13412194652482867-tmp-tgz tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz
+41 verbose lock tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\85cfe5fd-4878-0-13412194652482867-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+45 silly gunzTarPerm extractEntry History.md
+46 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+47 silly gunzTarPerm extractEntry Makefile
+48 silly gunzTarPerm modified mode [ 'Makefile', 436, 420 ]
+49 silly gunzTarPerm extractEntry Readme.md
+50 silly gunzTarPerm modified mode [ 'Readme.md', 436, 420 ]
+51 silly gunzTarPerm extractEntry bin/n
+52 silly gunzTarPerm modified mode [ 'bin/n', 509, 493 ]
+53 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+54 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+55 silly lockFile 85cfe5fd-4878-0-13412194652482867-tmp-tgz tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz
+56 silly lockFile 85cfe5fd-4878-0-13412194652482867-tmp-tgz tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\tmp.tgz
+57 verbose tar pack [ 'C:\\Users\\amsoft-guilherme\\AppData\\Roaming\\npm-cache\\n\\1.2.9\\package.tgz',
+57 verbose tar pack   'C:\\Users\\AMSOFT~1\\AppData\\Local\\Temp\\npm-4444-SjBog4o2\\1418821744878-0.13412194652482867\\package' ]
+58 verbose tarball C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+59 verbose folder C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+60 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+61 verbose lock tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\d2976602-4878-0-13412194652482867-package.lock
+62 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+63 verbose lock tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\b1ae717d-ng-npm-cache-n-1-2-9-package-tgz.lock
+64 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+65 silly lockFile d2976602-4878-0-13412194652482867-package tar://C:\Users\AMSOFT~1\AppData\Local\Temp\npm-4444-SjBog4o2\1418821744878-0.13412194652482867\package
+66 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+67 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+68 silly lockFile 5ab7ce02-oaming-npm-cache-n-1-2-9-package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+69 verbose lock C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\5ab7ce02-oaming-npm-cache-n-1-2-9-package.lock
+70 silly lockFile 5ab7ce02-oaming-npm-cache-n-1-2-9-package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+71 silly lockFile 5ab7ce02-oaming-npm-cache-n-1-2-9-package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+72 verbose tar unpack C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+73 silly lockFile 72175e7d-oaming-npm-cache-n-1-2-9-package tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+74 verbose lock tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\72175e7d-oaming-npm-cache-n-1-2-9-package.lock
+75 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+76 verbose lock tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\b1ae717d-ng-npm-cache-n-1-2-9-package-tgz.lock
+77 silly gunzTarPerm modes [ '755', '644' ]
+78 silly gunzTarPerm extractEntry package.json
+79 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+80 silly gunzTarPerm extractEntry bin/n
+81 silly gunzTarPerm modified mode [ 'bin/n', 438, 420 ]
+82 silly gunzTarPerm extractEntry History.md
+83 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+84 silly gunzTarPerm extractEntry Makefile
+85 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+86 silly gunzTarPerm extractEntry Readme.md
+87 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+88 silly lockFile 72175e7d-oaming-npm-cache-n-1-2-9-package tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+89 silly lockFile 72175e7d-oaming-npm-cache-n-1-2-9-package tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package
+90 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+91 silly lockFile b1ae717d-ng-npm-cache-n-1-2-9-package-tgz tar://C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+92 verbose chmod C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz 644
+93 silly chown skipping for windows C:\Users\amsoft-guilherme\AppData\Roaming\npm-cache\n\1.2.9\package.tgz
+94 silly lockFile 473decd1-registry-npmjs-org-n-n-1-2-9-tgz https://registry.npmjs.org/n/-/n-1.2.9.tgz
+95 silly lockFile 473decd1-registry-npmjs-org-n-n-1-2-9-tgz https://registry.npmjs.org/n/-/n-1.2.9.tgz
+96 silly lockFile 7f22195c-n-1-2-9 n@1.2.9
+97 silly lockFile 7f22195c-n-1-2-9 n@1.2.9
+98 silly lockFile 6b58d7dc-n n@
+99 silly lockFile 6b58d7dc-n n@
+100 silly resolved [ { name: 'n',
+100 silly resolved     description: 'node version manager',
+100 silly resolved     version: '1.2.9',
+100 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+100 silly resolved     homepage: 'https://github.com/visionmedia/n',
+100 silly resolved     bugs: { url: 'https://github.com/visionmedia/n/issues' },
+100 silly resolved     keywords: [ 'node', 'binary', 'version', 'manager', 'switcher', 'env' ],
+100 silly resolved     bin: { n: './bin/n' },
+100 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/n.git' },
+100 silly resolved     preferGlobal: true,
+100 silly resolved     os: [ '!win32' ],
+100 silly resolved     engines: { node: '*' },
+100 silly resolved     license: 'MIT',
+100 silly resolved     readme: '# n\n\nSimple flavour of node binary management, no subshells, no profile setup, no convoluted api, just _simple_.\n\n ![](https://i.cloudup.com/59cA8VEDae.gif)\n\n## Installation\n\n    $ npm install -g n\n\nor\n\n    $ make install\n    \nto `$HOME`. Prefix later calls to `n` with `N_PREFIX=$HOME`\n\n    $ PREFIX=$HOME make install\n\n### Installing Binaries\n\nInstall a few nodes:\n\n    $ n 0.8.14\n    $ n 0.8.17\n    $ n 0.9.6\n\nType `n` to prompt selection of an installed node. Use the up /\ndown arrow to navigate, and press enter or the right arrow to\nselect, or ^C to cancel:\n\n    $ n\n\n      0.8.14\n    ο 0.8.17\n      0.9.6\n\nUse or install the latest official release:\n\n    $ n latest\n\nUse or install the stable official release:\n\n    $ n stable\n\nSwitch to the previous version you were using:\n\n    $ n prev\n\n### Removing Binaries\n\nRemove some versions:\n\n    $ n rm 0.9.4 v0.10.0\n\nInstead of using `rm` we can simply use `-`:\n\n    $ n - 0.9.4\n\n### Binary Usage\n\nWhen running multiple versions of node, we can target\nthem directly by asking `n` for the binary path:\n\n    $ n bin 0.9.4\n    /usr/local/n/versions/0.9.4/bin/node\n\nOr by using a specific version through `n`\'s `use` sub-command:\n\n    $ n use 0.9.4 some.js\n\nwith flags:\n\n    $ n as 0.9.4 --debug some.js\n\n## Usage\n\n Output from `n --help`:\n\n    Usage: n [options] [COMMAND] [args]\n\n    Commands:\n\n      n                            Output versions installed\n      n latest                     Install or activate the latest node release\n      n stable                     Install or activate the latest stable node release\n      n <version>                  Install node <version>\n      n use <version> [args ...]   Execute node <version> with [args ...]\n      n bin <version>              Output bin path for <version>\n      n rm <version ...>           Remove the given version(s)\n      n --latest                   Output the latest node version available\n      n --stable                   Output the latest stable node version available\n      n ls                         Output the versions of node available\n\n    Options:\n\n      -V, --version   Output current version of n\n      -h, --help      Display help information\n\n    Aliases:\n\n      which   bin\n      use     as\n      list    ls\n      -       rm\n\n## Details\n\n `n` by default installs node to _/usr/local/n/versions_, from\n which it can see what you have currently installed, and activate previously installed versions of node when `n <version>` is invoked again.\n\n Activated nodes are then installed to the prefix _/usr/local_, which of course may be altered via the __N_PREFIX__ environment variable.\n\n To alter where `n` operates simply export __N_PREFIX__ to whatever you prefer.\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+100 silly resolved     readmeFilename: 'Readme.md',
+100 silly resolved     _id: 'n@1.2.9',
+100 silly resolved     dist: { shasum: 'e6f39ce9b27541f23344a8591d714596ca35ee6f' },
+100 silly resolved     _from: 'n@',
+100 silly resolved     _resolved: 'https://registry.npmjs.org/n/-/n-1.2.9.tgz' } ]
+101 info install n@1.2.9 into C:\Users\amsoft-guilherme\AppData\Roaming\npm
+102 info installOne n@1.2.9
+103 error notsup Unsupported
+103 error notsup Not compatible with your operating system or architecture: n@1.2.9
+103 error notsup Valid OS:    !win32
+103 error notsup Valid Arch:  any
+103 error notsup Actual OS:   win32
+103 error notsup Actual Arch: x64
+104 error System Windows_NT 6.2.9200
+105 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "n"
+106 error cwd C:\mozilla\womoz.mozillabrasil.org.br
+107 error node -v v0.10.25
+108 error npm -v 1.3.24
+109 error code EBADPLATFORM
+110 verbose exit [ 1, true ]

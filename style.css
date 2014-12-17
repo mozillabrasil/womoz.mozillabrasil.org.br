@@ -1,0 +1,20 @@
+/*
+Theme Name: WoMoz
+Theme URI: http://
+Description: Template das Meninas do WoMoz
+Author: Torto e Cynthia
+Author URI: 
+Version: 1.0
+Tags: womoz
+.
+Your theme can be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+ 
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ 
+.
+ */
+
+ html body{
+ 	margin-top: 0px !important;
+ }
