@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function() {
-
+        var tempPessoa = 1;
         $('#shotsByPlayerId').feeds({
             feeds: {
                 evento: 'http://tortoyoyo.tumblr.com/tagged/evento/rss'
@@ -8,6 +8,7 @@
             ssl: 'false',
             entryTemplate: function(entry) {
                 var template = '';
+
 
                 if (entry.source == 'evento') {
 
@@ -27,10 +28,31 @@
                     template += '</div>'
                     template += '</li>'
 
-                  
+
                 } else if (entry.source == 'pessoa') {
-                    // Just the content for twitter entries
-                    template = '<div><!=content!></div>';
+
+                    if (tempPessoa === 1) {
+                        template += '<div class="row">';
+                        template += '<div class="col-md-6">';
+                        template += '<div class="clientsphoto">';
+                        template += '<img src="img/s1.png" alt="Fulana">';
+                        template += '</div>';
+                        template += '<div class="quote">';
+                        template += '<blockquote>';
+                        template += '<p>s, et.</p>';
+                        template += '</blockquote>';
+                        template += '<h5>Fulana X</h5>';
+                        template += '<p>@fulana_x</p>';
+                        template += '</div>';
+                        template += '</div>';
+                        template += '</div>';
+
+                        tempPessoa++;
+                    } else {
+                        
+                    }
+
+
                 }
 
                 // Render the template
