@@ -36,7 +36,7 @@ function womoz_enqueue_scripts() {
 	wp_enqueue_script( 'jquery' );
 
 	// Bootstrap JS.
-	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.j', array(), null, true );
+	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array(), null, true );
 
 	// General scripts.
 	// NiceScroll.
