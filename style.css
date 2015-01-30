@@ -91,3 +91,74 @@ a img.aligncenter {
 .tribe-theme-womoz #tribe-events {
 	margin-top: 60px;
 }
+
+/* =Comments
+-------------------------------------------------------------- */
+.commentlist {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 22px;
+}
+.commentlist li.comment, .commentlist li.pingback {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.commentlist li.comment:before, .commentlist li.comment:after, .commentlist li.pingback:before, .commentlist li.pingback:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.commentlist li.comment:after, .commentlist li.pingback:after {
+  clear: both;
+}
+.commentlist .comment-meta {
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+}
+.commentlist .comment-meta .fn {
+  font-size: 13px;
+  font-weight: 600;
+}
+.commentlist .comment-meta a, .commentlist .comment-meta .fn {
+  color: #444;
+}
+.commentlist .comment-meta a:hover, .commentlist .comment-meta .fn:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+.commentlist .comment-author img {
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+.commentlist .comment-awaiting-moderation {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bypostauthor {
+  font-size: 100%;
+}
+
+.required {
+  color: #c00;
+}
+
+#commentform {
+  font-size: 13px;
+  line-height: 22px;
+}
+#commentform label {
+  display: block;
+}
+#commentform p {
+  margin-bottom: 10px;
+}
+
+.comment-content img {
+  max-width: 100%;
+}

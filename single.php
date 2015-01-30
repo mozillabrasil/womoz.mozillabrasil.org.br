@@ -12,10 +12,12 @@
 		<div class="wow">
 			<ul class="meta list-inline">
 				<li class="date"><p><span class="icon-calendar"></span> <?php the_date(); ?></p></li>
-				<li class="comment"><a href="#"><span class="icon-bubbles"></span> 15 Comentários</a></li>
+				<li class="comment"><a href="<?php comments_link(); ?>"><span class="icon-bubbles"></span> <?php comments_number( __( 'Comentar', 'womoz' ), __( '1 Comentário', 'womoz' ), __( '% Comentários', 'womoz' ) ); ?></a></li>
 			</ul>
 			<?php the_content(); ?>
 		</div>
+
+		<?php comments_template( '', true ); ?>
 
 		<?php endwhile; ?>
 	</article>

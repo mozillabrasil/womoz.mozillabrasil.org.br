@@ -152,6 +152,55 @@ function odin_pagination( $mid = 2, $end = 1, $show = false, $query = null ) {
 }
 
 /**
+* Custom comments loop.
+* @since 2.2.0
+* @author WPBrasil
+*/
+if ( ! function_exists( 'odin_comment_loop' ) ) {
+	function odin_comments_loop( $comment, $args, $depth ) {
+		$GLOBALS['comment'] = $comment;
+		switch ( $comment->comment_type ) {
+			case 'pingback' :
+			case 'trackback' :
+			?>
+
+			<li class="post pingback">
+				<p><?php _e( 'Pingback:', 'womoz' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Editar', 'womoz' ), '<span class="edit-link">', '</span>' ); ?></p>
+
+				<?php
+				break;
+				default :
+				?>
+
+				<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+					<article id="comment-<?php comment_ID(); ?>" class="comment">
+
+						<div class="comment-meta">
+							<div class="comment-author vcard">
+								<?php echo sprintf( '%1$s<span class="fn">%2$s</span> %3$s <a href="%4$s"><time datetime="%5$s">%6$s %7$s </time></a> <span class="says"> %8$s</span>', get_avatar( $comment, 40 ), get_comment_author_link(), __( 'em', 'womoz' ), esc_url( get_comment_link( $comment->comment_ID ) ), get_comment_time( 'c' ), get_comment_date(), __( 'às', 'womoz' ), get_comment_time(), __( 'disse:', 'womoz' ) ); ?>
+								<?php edit_comment_link( __( 'Editar', 'womoz' ), '<span class="edit-link"> | ', '</span>' ); ?>
+							</div>
+
+							<?php if ( $comment->comment_approved == '0' ) : ?>
+								<div class="comment-awaiting-moderation"><?php _e( 'Seu comentários está aguardando na moderação.', 'womoz' ); ?></div>
+							<?php endif; ?>
+						</div>
+
+						<div class="comment-content"><?php comment_text(); ?></div>
+
+						<div class="reply">
+							<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Responder', 'womoz' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						</div>
+
+						<hr>
+
+					</article>
+					<?php break;
+		}
+	}
+}
+
+/**
 * Cleanup wp_head().
 */
 function womoz_head_cleanup() {

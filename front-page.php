@@ -94,7 +94,7 @@
 							<?php endif; ?>
 							<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 							<div class="likecount"><a href="#"><span class="icon-heart"></span> 71</a></div>
-							<div class="commentcount"><a href="#"><span class="icon-bubbles"></span> 15</a></div>
+							<div class="commentcount"><a href="<?php comments_link(); ?>"><span class="icon-bubbles"></span> <?php comments_number( __( 'Comentar', 'womoz' ), __( '1 Comentário', 'womoz' ), __( '% Comentários', 'womoz' ) ); ?></a></div>
 						</li>
 						<?php endwhile; ?>
 					</ul>
