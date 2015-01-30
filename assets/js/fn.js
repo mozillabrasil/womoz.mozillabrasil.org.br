@@ -1,6 +1,7 @@
 (function($) {
     $(document).ready(function() {
         var tempPessoa = 1;
+        /*
         $('#shotsByPlayerId').feeds({
             feeds: {
                 evento: 'http://tortoyoyo.tumblr.com/tagged/evento/rss'
@@ -19,7 +20,7 @@
                     template += '<li>'
                     template += '<a href="#">'
                     template += img
-                    template += '<h3><a href="#"><!=title!></a></h3>'
+                    template += '<h3><!=title!></h3></a>'
                     template += '<div class="likecount">'
                     template += '<a href="#"><span class="icon-heart"></span> 71</a>'
                     template += '</div>'
@@ -49,7 +50,7 @@
 
                         tempPessoa++;
                     } else {
-                        
+
                     }
 
 
@@ -59,28 +60,7 @@
                 return this.tmpl(template, entry);
             }
         });
-
-        //========================
-        //PRELOADER
-        //========================
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow');
-        // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-
-
-        //========================
-        //CUSTOM SCROLLBAR
-        //========================
-        $("html").niceScroll({
-            mousescrollstep: 70,
-            cursorcolor: "#ea9312",
-            cursorwidth: "5px",
-            cursorborderradius: "10px",
-            cursorborder: "none",
-        });
+				*/
 
         //========================
         //SMOOTHSCROLL
@@ -103,24 +83,25 @@
         //NAVBAR
         //========================
         // hide .navbar first
-        $(".navbar").hide();
+       // $(".navbar").hide();
 
         // fade in .navbar
-        $(function() {
+       $(function() {
             $(window).scroll(function() {
 
                 // set distance user needs to scroll before we start fadeIn
                 if ($(this).scrollTop() > 40) {
-                    $('.navbar')
-                        .removeClass('animated fadeOutUp')
-                        .addClass('animated fadeInDown')
-                        .fadeIn();
+                    $('.navbar').addClass('mozHex');
+						//.css("backgroun-color");
+                        //.removeClass('animated fadeOutUp')
+                        //.addClass('animated fadeInDown')
+                        //.fadeIn();
 
                 } else {
                     $('.navbar')
-                        .removeClass('animated fadeInDown')
-                        .addClass('animated fadeOutUp')
-                        .fadeOut();
+                        .removeClass('mozHex');
+                       // .addClass('animated fadeOutUp')
+                       // .fadeOut();
                 }
             });
         });

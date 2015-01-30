@@ -13,6 +13,8 @@ if ( ! isset( $content_width ) ) {
 */
 require_once get_template_directory() . '/core/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/cpt.php';
+require_once get_template_directory() . '/core/metabox.php';
+require_once get_template_directory() . '/core/widgets.php';
 
 /**
 * Load os stylesheets e scripts.
@@ -39,9 +41,6 @@ function womoz_enqueue_scripts() {
 	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array(), null, true );
 
 	// General scripts.
-	// NiceScroll.
-	wp_enqueue_script( 'nicescroll', $template_url . '/assets/js/jquery.nicescroll.min.js', array(), null, true );
-
 	// Feeds.
 	wp_enqueue_script( 'feeds', $template_url . '/assets/js/jquery.feeds.min.js', array(), null, true );
 
@@ -65,7 +64,9 @@ if ( ! function_exists( 'womoz_setup_features' ) ) {
 		*/
 		register_nav_menus(
 			array(
-				'menu1' => __( 'Home', 'womoz' )
+				'main-menu' => __( 'Menu Principal', 'womoz' ),
+				'page-menu' => __( 'Menu Interno', 'womoz' ),
+				'footer-menu' => __( 'Menu Rodapé', 'womoz' )
 			)
 		);
 
@@ -73,59 +74,30 @@ if ( ! function_exists( 'womoz_setup_features' ) ) {
 		* Add post_thumbnails suport.
 		*/
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( '323-243', 323 );
 
 		/**
 		* Add feed link.
 		*/
 		add_theme_support( 'automatic-feed-links' );
+
+		/**
+		* HTML5 core markup
+		*/
+		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
+
+		/**
+		* Title markup
+		*/
+		add_theme_support( "title-tag" );
 	}
 }
 add_action( 'after_setup_theme', 'womoz_setup_features' );
 
 /**
-* Generates the title of the site optimized for SEO.
-*/
-function womoz_wp_title( $title, $sep ) {
-	global $page, $paged;
-
-	if ( is_feed() ) {
-		return $title;
-	}
-
-	// Add the blog name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title .= ' ' . $sep . ' ' . $site_description;
-	}
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 ) {
-		$title .= ' ' . $sep . ' ' . sprintf( __( 'Page %s', 'womoz' ), max( $paged, $page ) );
-	}
-
-	return $title;
-}
-add_filter( 'wp_title', 'womoz_wp_title', 10, 2 );
-
-
-/**
 * Pagination.
-*
 * @since 2.2.0
 * @author WPBrasil
-*
-* @global array $wp_query Current WP Query.
-* @global array $wp_rewrite URL rewrite rules.
-*
-* @param int $mid Total of items that will show along with the current page.
-* @param int $end Total of items displayed for the last few pages.
-* @param bool $show Show all items.
-* @param mixed $query Custom query.
-*
-* @return string Return the pagination.
 */
 function odin_pagination( $mid = 2, $end = 1, $show = false, $query = null ) {
 
@@ -178,7 +150,6 @@ function odin_pagination( $mid = 2, $end = 1, $show = false, $query = null ) {
 		}
 	}
 }
-
 
 /**
 * Cleanup wp_head().
