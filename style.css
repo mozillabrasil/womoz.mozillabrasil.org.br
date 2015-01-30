@@ -1,20 +1,93 @@
 /*
 Theme Name: WoMoz
-Theme URI: http://
+Theme URI: http://womoz.mozillabrasil.org.br
 Description: Template das Meninas do WoMoz
-Author: Torto, Cynthia Zanoni, Cynthia Pereira
+Author: Cynthia Zanoni, Cynthia Pereira, Guilherme Berghauser
 Author URI:
-Version: 1.0
-Tags: womoz
-.
-Your theme can be your copyrighted work.
-Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+Version: 1.1
+Tags: womoz, mozilla, brasil
+*/
 
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
 
-.
- */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
 
- html body{
- 	margin-top: 0px !important;
- }
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/* =The Events Calendar
+-------------------------------------------------------------- */
+.tribe-theme-womoz #tribe-events {
+	margin-top: 60px;
+}

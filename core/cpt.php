@@ -36,7 +36,7 @@ function womoz_projects_post_type() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+		'capability_type'     => 'post',
 	);
 
 	register_post_type( 'projetos', $args );
@@ -79,7 +79,7 @@ function womoz_group_post_type() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+		'capability_type'     => 'post',
 	);
 
 	register_post_type( 'voluntarias', $args );
