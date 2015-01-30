@@ -1,5 +1,30 @@
 <?php
 
+// Separando o Menu
+class Custom_Menu_Separator {
+	function __construct() {
+		add_action( 'init_custom_menu_separator', array( &$this, 'add_admin_menu_separator' ) );
+		add_action( 'init', array( &$this, 'set_admin_menu_separator' ) );
+	}
+
+	function add_admin_menu_separator( $position ) {
+		global $menu;
+
+		$menu[$position] = array(
+			0   =>  '',
+			1   =>  'read',
+			2   =>  'separator' . $position,
+			3   =>  '',
+			4   =>  'wp-menu-separator'
+		);
+	}
+
+	function set_admin_menu_separator() {
+		do_action( 'init_custom_menu_separator', 27 );
+	}
+}
+new Custom_Menu_Separator();
+
 // Register Custom Post Type Projetos
 function womoz_projects_post_type() {
 
@@ -30,7 +55,7 @@ function womoz_projects_post_type() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => false,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 25,
+		'menu_position'       => 27,
 		'menu_icon'           => 'dashicons-media-code',
 		'can_export'          => true,
 		'has_archive'         => true,
