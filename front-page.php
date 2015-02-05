@@ -78,7 +78,6 @@
 				<?php $posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => '3' ) ); ?>
 				<div class="sectionhead">
 					<h1><?php _e( 'Novidades no Brasil', 'womoz' ); ?></h1>
-					<strong><?php _e( 'Alguma frase aqui', 'womoz' ); ?></strong>
 					<hr class="separetor">
 				</div>
 
@@ -170,7 +169,6 @@
 					</div>
 
 					<div class="col-md-6 col-md-pull-6 resume-to-apply">
-						<p><?php _e( 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim', 'womoz' ); ?></p>
 						<?php if( $eventos->have_posts() ):
 						while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
 
