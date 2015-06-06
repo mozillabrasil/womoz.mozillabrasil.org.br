@@ -76,6 +76,15 @@ if ( ! function_exists( 'womoz_setup_features' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( '323-243', 323 );
 
+		/*
+		* Filter add link to all Post Thumbnails 
+		 */
+		function all_link_post_thumbnails( $html, $post_id, $post_image_id ) {
+			$html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+			return $html;
+		}
+		add_filter( 'post_thumbnail_html', 'all_link_post_thumbnails', 10, 3 );
+
 		/**
 		* Add feed link.
 		*/

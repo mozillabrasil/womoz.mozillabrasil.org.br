@@ -15,7 +15,7 @@
 				<?php if( has_post_thumbnail() ) {
 					the_post_thumbnail('full', array('class' => 'img-responsive') );
 				} else {
-					echo '<img class="img-responsive" src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/project-thumbnail-default.jpg" alt="Projetos do WoMoz" />';
+					echo '<img class="img-responsive" src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/img/womoz-brasil.jpg" alt="Projetos do WoMoz" />';
 				} ?>
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
