@@ -8,9 +8,9 @@
 					</div>
 					<div class="col-md-9">
 						<ul>
-							<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaker.png" alt="Wemaker"></li>
-							<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/firefox.png" alt="Firefox"></li>
-							<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mdn.png" alt="MDN"></li>
+							<li><a href="https://webmaker.org" target="_blank" title="Webmaker"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaker.png" alt="Webmaker"></a></li>
+							<li><a href="https://www.mozilla.org/pt-BR/firefox/products/" target="_blank" title="Mozilla Firefox"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/firefox.png" alt="Mozilla Firefox"></a></li>
+							<li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" title="MDN - Mozilla Developer Network"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mdn.png" alt="MDN - Mozilla Developer Network"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 
 			<!-- projects -->
 			<div id="project" class="container">
-				<?php $projetos = new WP_Query( array( 'post_type' => 'projetos', 'post_status' => 'publish', 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
+				<?php $projetos = new WP_Query( array( 'post_type' => 'projetos', 'post_status' => 'publish', 'posts_per_page' => '3', 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
 				<div class="sectionhead row">
 					<h1><?php _e( 'Projetos do WoMoz', 'womoz' ); ?></h1>
 					<hr class="separetor">
@@ -53,9 +53,9 @@
 						<?php if( has_post_thumbnail() ) {
 							the_post_thumbnail('thumbnail');
 						} else {
-							echo '<img class="img-responsive" src="' . get_template_directory() . '/assets/images/project-thumbnail-default.jpg" alt="'.the_title().'" />';
+							echo '<a href="'. the_permalink() .'"><img class="img-responsive" src="' . get_template_directory() . '/assets/img/womoz-brasil.jpg" alt="'.the_title().'" /></a>';
 						} ?>
-						<h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 						<?php the_excerpt(); ?>
 					</div>
 					<?php endwhile; ?>
@@ -89,10 +89,10 @@
 							<?php if( has_post_thumbnail() ): ?>
 							<?php the_post_thumbnail( '323-243', array( 'class' => 'img-responsive' ) ); ?>
 							<?php else: ?>
-							<img alt="<?php the_title(); ?>" class="img-responsive" src="http://placehold.it/323x243&text=Sem imagem">
+							<img alt="<?php the_title(); ?>" class="img-responsive" src="<?php echo get_template_directory(); ?>/assets/img/womoz-brasil.jpg">
 							<?php endif; ?>
 							<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-							<div class="likecount"><a href="#"><span class="icon-heart"></span> 71</a></div>
+							<!-- <div class="likecount"><a href="#"><span class="icon-heart"></span> 71</a></div> -->
 							<div class="commentcount"><a href="<?php comments_link(); ?>"><span class="icon-bubbles"></span> <?php comments_number( __( 'Comentar', 'womoz' ), __( '1 Comentário', 'womoz' ), __( '% Comentários', 'womoz' ) ); ?></a></div>
 						</li>
 						<?php endwhile; ?>
@@ -108,10 +108,10 @@
 
 			<!-- team -->
 			<div id="team" class="container">
-				<?php $voluntarias = new WP_Query( array( 'post_type' => 'voluntarias', 'post_status' => 'publish', 'posts_per_page' => '-1', 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
+				<?php $voluntarias = new WP_Query( array( 'post_type' => 'voluntarias', 'post_status' => 'publish', 'posts_per_page' => '6', 'orderby' => 'rand' ) ); ?>
 				<div class="sectionhead">
 					<h1><?php _e( 'O Grupo', 'womoz' ); ?></h1>
-					<strong><?php _e( 'Conheça algumas voluntárias do WoMoz', 'womoz' ); ?></strong>
+					<strong><?php _e( 'Conheça algumas pessoas do time WoMoz Brasil', 'womoz' ); ?></strong>
 					<hr class="separetor">
 				</div>
 				<div class="row">
@@ -129,7 +129,7 @@
 									</figure>
 									<?php else: ?>
 									<figure>
-										<img src="http://placehold.it/323x243" width="323" height="243" />
+										<img src="<?php echo get_template_directory(); ?>/assets/img/womoz-brasil.jpg" />
 										<figcaption><h2><?php the_title(); ?></h2></figcaption>
 									</figure>
 									<?php endif; ?>

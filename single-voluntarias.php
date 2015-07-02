@@ -6,7 +6,7 @@
 
 		<div class="sectionhead">
 			<h1><?php _e( 'O Grupo', 'womoz' ); ?></h1>
-			<h4><?php _e( 'Conheça algumas voluntárias do WoMoz', 'womoz' ); ?></h4>
+			<h4><?php _e( 'Conheça as pessoas do time WoMoz Brasil', 'womoz' ); ?></h4>
 			<hr class="separetor">
 		</div>
 
@@ -20,7 +20,7 @@
 					<?php the_post_thumbnail('323-243', array( 'class' => 'img-responsive' ) ); ?>
 					<small><?php the_title(); ?></small>
 				<?php else: ?>
-					<img class="img-responsive" src="http://placehold.it/323x243" width="323" height="243" alt="<?php the_title(); ?>">
+					<img alt="<?php the_title(); ?>" class="img-responsive" src="<?php echo get_template_directory(); ?>/assets/img/womoz-brasil.jpg">
 					<small><?php the_title(); ?></small>
 				<?php endif; ?>
 			</div>
