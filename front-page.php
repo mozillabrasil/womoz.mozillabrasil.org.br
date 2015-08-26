@@ -92,7 +92,7 @@
 							<img alt="<?php the_title(); ?>" class="img-responsive" src="<?php echo get_template_directory(); ?>/assets/img/womoz-brasil.jpg">
 							<?php endif; ?>
 							<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-							<!-- <div class="likecount"><a href="#"><span class="icon-heart"></span> 71</a></div> -->
+							<div class="likecount"><?php echo getPostLikeLink( get_the_ID() ); ?></div>
 							<div class="commentcount"><a href="<?php comments_link(); ?>"><span class="icon-bubbles"></span> <?php comments_number( __( 'Comentar', 'womoz' ), __( '1 Comentário', 'womoz' ), __( '% Comentários', 'womoz' ) ); ?></a></div>
 						</li>
 						<?php endwhile; ?>

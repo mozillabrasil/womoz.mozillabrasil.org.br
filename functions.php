@@ -17,6 +17,11 @@ require_once get_template_directory() . '/core/metabox.php';
 require_once get_template_directory() . '/core/widgets.php';
 
 /**
+* Includes
+*/
+include_once get_template_directory() . '/assets/like-system/post-like.php';
+
+/**
 * Load os stylesheets e scripts.
 */
 function womoz_enqueue_scripts() {
@@ -30,6 +35,9 @@ function womoz_enqueue_scripts() {
 
 	// Google Fonts
 	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Antic|Raleway:300', array(), null, 'all' );
+
+	// Like System
+	wp_enqueue_style( 'like-system', $template_url . '/assets/like-system/css/like-styles.min.css', array(), null, 'all' );
 
 	// WoMoz.
 	wp_enqueue_style( 'womoz-style', $template_url . '/assets/css/skin.min.css', array(), null, 'all' );
