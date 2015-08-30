@@ -36,11 +36,11 @@ function womoz_enqueue_scripts() {
 	// Google Fonts
 	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Antic|Raleway:300', array(), null, 'all' );
 
-	// Like System
-	wp_enqueue_style( 'like-system', $template_url . '/assets/like-system/css/like-styles.min.css', array(), null, 'all' );
-
 	// WoMoz.
 	wp_enqueue_style( 'womoz-style', $template_url . '/assets/css/skin.min.css', array(), null, 'all' );
+
+	// Like System
+	wp_enqueue_style( 'like-system', $template_url . '/assets/like-system/css/like-styles.min.css', array(), null, 'all' );
 
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
