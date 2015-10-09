@@ -162,23 +162,3 @@ a img.aligncenter {
 .comment-content img {
   max-width: 100%;
 }
-
-/* =Custom Styles
--------------------------------------------------------------- */
-/* TODO: move custom styles to a external file */
-
-.centered-text {
-	text-align: center;
-}
-
-.has-soft-transition {
-	transition: all 250ms linear;
-}
-
-.has-transition {
-	transition: all 400ms linear;
-}
-
-.sendBtn {
-	transition: all 400ms linear;
-}

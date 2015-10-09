@@ -1,0 +1,18 @@
+/* =Custom Styles
+-------------------------------------------------------------- */
+
+.centered-text {
+	text-align: center;
+}
+
+.has-soft-transition {
+	transition: all 250ms linear;
+}
+
+.has-transition {
+	transition: all 400ms linear;
+}
+
+.sendBtn {
+	transition: all 400ms linear;
+}
