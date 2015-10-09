@@ -162,3 +162,23 @@ a img.aligncenter {
 .comment-content img {
   max-width: 100%;
 }
+
+/* =Custom Styles
+-------------------------------------------------------------- */
+/* TODO: move custom styles to a external file */
+
+.post-title {
+	text-align: center;
+}
+
+.post-title a {
+	transition: all 250ms linear;
+}
+
+#shotsByPlayerId li {
+	transition: all 400ms linear;
+}
+
+#shotsByPlayerId li:hover {
+	transition: all 400ms linear;
+}

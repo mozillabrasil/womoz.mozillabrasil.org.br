@@ -55,7 +55,7 @@
 						} else {
 							echo '<a href="'. the_permalink() .'"><img class="img-responsive" src="' . get_template_directory() . '/assets/img/womoz-brasil.jpg" alt="'.the_title().'" /></a>';
 						} ?>
-						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+						<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 						<?php the_excerpt(); ?>
 					</div>
 					<?php endwhile; ?>
