@@ -167,18 +167,18 @@ a img.aligncenter {
 -------------------------------------------------------------- */
 /* TODO: move custom styles to a external file */
 
-.post-title {
+.centered-text {
 	text-align: center;
 }
 
-.post-title a {
+.has-soft-transition {
 	transition: all 250ms linear;
 }
 
-#shotsByPlayerId li {
+.has-transition {
 	transition: all 400ms linear;
 }
 
-#shotsByPlayerId li:hover {
+.sendBtn {
 	transition: all 400ms linear;
 }
