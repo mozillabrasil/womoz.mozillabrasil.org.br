@@ -55,7 +55,7 @@
 						} else {
 							echo '<a href="'. the_permalink() .'"><img class="img-responsive" src="' . get_template_directory() . '/assets/img/womoz-brasil.jpg" alt="'.the_title().'" /></a>';
 						} ?>
-						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+						<h4 class="centered-text"><a href="<?php the_permalink(); ?>" class="has-soft-transition"><?php the_title(); ?></a></h4>
 						<?php the_excerpt(); ?>
 					</div>
 					<?php endwhile; ?>
@@ -85,7 +85,7 @@
 				<?php if( $posts->have_posts() ): ?>
 					<ul id="shotsByPlayerId" class="hfeed vcalendar">
 						<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-						<li>
+						<li class="has-transition">
 							<?php if( has_post_thumbnail() ): ?>
 							<?php the_post_thumbnail( '323-243', array( 'class' => 'img-responsive' ) ); ?>
 							<?php else: ?>
